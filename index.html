@@ -3,120 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Athletes Ahaar | Fueling Your Performance</title>
+    <title>Athletes Ahaar | High-Performance Nutrition & Plans</title>
     
+    <!-- Load Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
     <style>
+        /* Custom Styles and Font Loading */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f9;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
         }
-
-        /* --- 1. COVER / HERO SECTION STYLES --- */
-        .hero {
-            /* Full viewport height for a 'cover page' effect */
-            height: 100vh;
-            background-color: #1e88e5; /* Primary Brand Blue */
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
+        /* Style for the Hero section to ensure full height */
+        .hero-section {
+            min-height: 100vh;
+            background-image: linear-gradient(135deg, #1e3a8a 0%, #104e8b 100%); /* Deep Blue Gradient */
         }
-        .hero h1 {
-            font-size: 4em;
-            margin-bottom: 0.1em;
-            font-weight: 900;
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-top: 0;
-            opacity: 0.9;
-        }
-        .hero-cta {
-            background-color: #ff9800; /* Vibrant Orange CTA */
-            color: white;
-            padding: 15px 35px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .hero-cta:hover {
-            background-color: #e68900;
-        }
-
-        /* --- 2. CONTENT SECTION STYLES --- */
-        .content-section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .content-section h2 {
-            font-size: 2.5em;
-            color: #1e88e5;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .tip-card {
-            background-color: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-            border-left: 5px solid #ff9800;
-        }
-        .tip-card h3 {
-            color: #333;
-            margin-top: 0;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #777;
-            background-color: #e0e0e0;
+        /* Custom scroll behavior for smooth transition to sections */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body>
+<body class="text-gray-800">
 
-    <header class="hero">
-        <h1>ATHLETES AHAAR</h1>
-        <p>FUELING THE NEXT GENERATION OF CHAMPIONS.</p>
-        
-        <a href="#tips-content" class="hero-cta">Explore Quick Tips Below</a>
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold text-blue-700">ATHLETES AHAAR</span>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#plans" class="text-gray-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Plans</a>
+                    <a href="#tips" class="text-gray-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Tips</a>
+                    <a href="#contact" class="text-gray-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO / COVER SECTION -->
+    <header class="hero-section flex items-center justify-center p-4">
+        <div class="text-center max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
+                Fueling Champions,<br class="hidden sm:inline"> Igniting Performance.
+            </h1>
+            <p class="text-xl text-blue-200 mb-10">
+                Unlock your peak potential with personalized nutrition science designed for athletes.
+            </p>
+            <a href="#plans" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full shadow-lg text-lg transition duration-300 transform hover:scale-105 inline-flex items-center">
+                Get Started Today
+            </a>
+        </div>
     </header>
 
-    <main id="tips-content" class="content-section">
-        <h2>Expert Nutrition Tips for Peak Performance</h2>
+    <!-- 3. SUBSCRIPTION PLANS SECTION -->
+    <section id="plans" class="py-16 md:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">
+                Our Performance Plans
+            </h2>
+            <p class="text-center text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
+                Choose the plan that fits your training cycle and goals. All plans include dedicated support from certified nutritionists.
+            </p>
 
-        <div class="tip-card">
-            <h3>Tip 1: The Golden 30-Minute Window</h3>
-            <p>Always consume a quick-acting carb and protein source (like a banana and a scoop of whey) within 30 minutes post-workout. This is when your muscles are most receptive to recovery, maximizing gains and minimizing soreness.</p>
-        </div>
+            <div class="flex flex-col lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8">
+                
+                <!-- Plan 1: 1-Month Plan -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-4 border-gray-100 flex-1 max-w-md mx-auto transform hover:shadow-blue-200 transition duration-300 hover:scale-[1.02]">
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Foundation Boost</h3>
+                        <p class="text-5xl font-extrabold text-blue-700">
+                            ₹2,000
+                        </p>
+                        <p class="text-gray-500 mb-8">per month</p>
+                    </div>
+                    <ul class="space-y-4 text-left text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">✅</span> <span>**1-Month** Custom Diet Plan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">✅</span> <span>Initial 60-Minute Consultation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">✅</span> <span>Macro & Micronutrient Tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">✅</span> <span>Weekly Email Check-ins</span>
+                        </li>
+                        <li class="flex items-start opacity-50">
+                            <span class="text-gray-400 mr-2">❌</span> <span>Dedicated WhatsApp Support</span>
+                        </li>
+                        <li class="flex items-start opacity-50">
+                            <span class="text-gray-400 mr-2">❌</span> <span>In-depth Training Phase Planning</span>
+                        </li>
+                    </ul>
+                    <div class="mt-10 text-center">
+                        <a href="#contact" class="w-full bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-150 shadow-md">
+                            Select 1 Month
+                        </a>
+                    </div>
+                </div>
 
-        <div class="tip-card">
-            <h3>Tip 2: Hydration is NOT Just Water</h3>
-            <p>For sessions lasting over 60 minutes, plain water isn't enough. You need electrolytes (sodium, potassium). Mix a pinch of sea salt into your water bottle or use a natural sports drink to maintain nerve and muscle function.</p>
-        </div>
+                <!-- Plan 2: 3-Month Plan (Recommended) -->
+                <div class="bg-blue-700 p-8 rounded-xl shadow-2xl border-4 border-amber-500 lg:scale-[1.05] flex-1 max-w-md mx-auto transform hover:shadow-amber-300 transition duration-300">
+                    <div class="text-center text-white">
+                        <span class="inline-block bg-amber-500 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase mb-3">BEST VALUE</span>
+                        <h3 class="text-3xl font-bold mb-4">Season Pro</h3>
+                        <p class="text-5xl font-extrabold">
+                            ₹5,500
+                        </p>
+                        <p class="mb-8 text-blue-200">for 3 months (Save ₹500)</p>
+                    </div>
+                    <ul class="space-y-4 text-left text-blue-100">
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">⭐</span> <span>**3-Month** Progressive Diet Plan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">⭐</span> <span>Initial & Mid-point Video Consultations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">⭐</span> <span>Advanced Supplement Timing Guide</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">⭐</span> <span>Dedicated **WhatsApp Support** (Priority)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">⭐</span> <span>Customized Race/Game Day Fueling Strategy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">⭐</span> <span>Seasonal Training Phase Adjustments</span>
+                        </li>
+                    </ul>
+                    <div class="mt-10 text-center">
+                        <a href="#contact" class="w-full bg-amber-500 text-gray-900 font-extrabold py-3 px-6 rounded-lg hover:bg-amber-400 transition duration-150 shadow-lg">
+                            Select 3 Months
+                        </a>
+                    </div>
+                </div>
 
-        <div class="tip-card">
-            <h3>Tip 3: The Power of Sleep Fuel</h3>
-            <p>A slow-digesting protein (like cottage cheese or casein powder) before bed prevents muscle breakdown overnight. Think of it as a low-level fuel drip for your muscles while you rest and repair.</p>
+            </div>
         </div>
-        
-        <p style="text-align: center; margin-top: 40px;">*More in-depth articles coming soon when the full site launches!*</p>
-    </main>
-    
-    <footer class="footer">
-        &copy; 2025 Athletes Ahaar. All Rights Reserved. | Hosted for Free by GitHub Pages.
+    </section>
+
+    <!-- 4. CONTENT TIPS SECTION -->
+    <section id="tips" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">
+                Athlete's Corner: Quick Tips
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Tip Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Pre-Workout Fuel</h3>
+                    <p class="text-gray-600">Consume complex carbohydrates 1-2 hours before training to ensure steady energy release throughout your session. Think oats or whole-wheat toast.</p>
+                </div>
+                
+                <!-- Tip Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Nighttime Recovery</h3>
+                    <p class="text-gray-600">A small serving of slow-digesting protein (like paneer or yogurt) before bed aids muscle repair and prevents catabolism while you sleep.</p>
+                </div>
+                
+                <!-- Tip Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Electrolyte Balance</h3>
+                    <p class="text-gray-600">During long sessions, you need more than water. Add a pinch of salt to your drink to replace sodium lost through sweat and prevent cramping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONTACT & FOOTER SECTION -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-amber-400 mb-8">
+                Ready to Fuel Your Success?
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                Reach out today to discuss your goals and choose the perfect plan to elevate your athletic journey.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-12 mb-10">
+                <!-- Email Contact -->
+                <div class="flex items-center justify-center">
+                    <span class="text-2xl mr-3">📧</span>
+                    <a href="mailto:athletes.ahaar@gmail.com" class="text-lg text-gray-200 hover:text-amber-400 font-semibold">
+                        athletes.ahaar@gmail.com
+                    </a>
+                </div>
+
+                <!-- Phone Contact -->
+                <div class="flex items-center justify-center">
+                    <span class="text-2xl mr-3">📞</span>
+                    <a href="tel:+917045884830" class="text-lg text-gray-200 hover:text-amber-400 font-semibold">
+                        +91 7045884830
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700">
+                <p class="text-sm text-gray-500">
+                    &copy; 2025 Athletes Ahaar. All Rights Reserved. | Hosted Free on GitHub Pages.
+                </p>
+            </div>
+        </div>
     </footer>
 
 </body>
