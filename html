@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletes Ahaar | Fueling Your Performance</title>
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <style>
+        :root {
+            /* Basic Contrast */
+            --background-color: #FFFFFF; /* Clean White */
+            --text-color: #2c3e50;       /* Dark Navy/Charcoal for high contrast */
+            
+            /* Accent Color (Choose a color for buttons/highlights, e.g., a vibrant blue or green) */
+            --primary-color: #3498db;    /* Example: A strong Blue */
+            --primary-hover: #2980b9;    /* Darker blue for button hover effect */
+            
+            /* Typography (Match your current font if possible) */
+            --main-font: 'Arial', sans-serif; 
+            --heading-font: 'Helvetica Neue', sans-serif;
+        }
+
+        /* --- Basic Reset and Styles for Contrast --- */
+        body {
+            font-family: var(--main-font);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--heading-font);
+            color: var(--text-color);
+        }
+
+        /* Call-to-Action (CTA) Button Style */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--background-color); /* White text on accent color */
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* (Add more specific CSS for the sections below) */
+
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="logo-link">
+            <img src="path/to/your/logo.png" 
+                 alt="Athletes Ahaar Logo - Sports Nutrition"
+                 class="logo-image">
+        </a>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Book A Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>FUELING THE NEXT GENERATION OF CHAMPIONS.</h1>
+        <p class="tagline">Personalized sports nutrition to optimize endurance, recovery, and strength.</p>
+        <a href="services.html" class="cta-button">See Our Plans</a>
+    </section>
+
+    <section class="services-overview">
+        <h2>Your Personalized Path to Peak Performance</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Endurance Fueling</h3>
+                <p>Marathon prep, triathlon diets, and sustained energy plans.</p>
+            </div>
+            <div class="service-card">
+                <h3>Strength & Gain</h3>
+                <p>Diet protocols for muscle synthesis, fat loss, and recovery.</p>
+            </div>
+            <div class="service-card">
+                <h3>Injury Recovery</h3>
+                <p>Targeted nutrition to accelerate healing and reduce downtime.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips-content" class="quick-tips">
+        <h2>Expert Nutrition Tips for Peak Performance</h2>
+        <div class="tip-card">
+             <h3>Tip 1: The Golden 30-Minute Window</h3>
+             <p>Always consume a quick-acting carb and protein source (like a banana and a scoop of whey) within 30 minutes post-workout...</p>
+        </div>
+        <div class="tip-card">
+             <h3>Tip 2: Hydration is NOT Just Water</h3>
+             <p>For sessions lasting over 60 minutes, plain water isn't enough. You need electrolytes (sodium, potassium)...</p>
+        </div>
+        <div class="tip-card">
+             <h3>Tip 3: The Power of Sleep Fuel</h3>
+             <p>A slow-digesting protein (like cottage cheese or casein powder) before bed prevents muscle breakdown overnight...</p>
+        </div>
+        <a href="blog.html" class="secondary-link">Read More In-Depth Articles</a>
+    </section>
+
+    <section class="lead-gen-cta">
+        <h2>Get Your FREE Athlete's Meal Prep Guide!</h2>
+        <p>Unlock our 7-day high-performance meal plan designed by the experts at Athletes Ahaar. Stop guessing, start fueling right.</p>
+        <form action="#" method="POST" class="signup-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="cta-button">Download Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Athletes Ahaar. All Rights Reserved.</p>
+        </footer>
+
+</body>
+</html>
