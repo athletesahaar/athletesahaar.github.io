@@ -6,96 +6,118 @@
     <title>Athletes Ahaar | Fueling Your Performance</title>
     
     <style>
-        /* Reset and Body Styles */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            background-color: #f4f4f9;
-            color: #333;
             margin: 0;
             padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* --- 1. COVER / HERO SECTION STYLES --- */
+        .hero {
+            /* Full viewport height for a 'cover page' effect */
+            height: 100vh;
+            background-color: #1e88e5; /* Primary Brand Blue */
+            color: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             text-align: center;
+            padding: 0 20px;
         }
-
-        /* Container for content */
-        .container {
-            background-color: #ffffff;
-            padding: 40px 60px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 90%;
-        }
-
-        /* Branding */
-        .brand-name {
-            font-size: 2.5em;
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 0.1em;
             font-weight: 900;
-            color: #1e88e5; /* A sporty blue color */
-            margin-bottom: 5px;
         }
-
-        /* Tagline/Slogan */
-        .tagline {
-            font-size: 1.2em;
-            color: #555;
+        .hero p {
+            font-size: 1.5em;
             margin-top: 0;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #eeeeee;
-            padding-bottom: 20px;
+            opacity: 0.9;
         }
-
-        /* Main Message */
-        .message {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
-
-        /* Call to Action */
-        .cta {
-            background-color: #ff9800; /* A vibrant orange for action */
+        .hero-cta {
+            background-color: #ff9800; /* Vibrant Orange CTA */
             color: white;
-            padding: 12px 25px;
+            padding: 15px 35px;
             text-decoration: none;
             border-radius: 8px;
+            font-size: 1.2em;
             font-weight: bold;
+            margin-top: 20px;
             transition: background-color 0.3s;
         }
-
-        .cta:hover {
+        .hero-cta:hover {
             background-color: #e68900;
         }
 
-        /* Footer/Legal */
+        /* --- 2. CONTENT SECTION STYLES --- */
+        .content-section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .content-section h2 {
+            font-size: 2.5em;
+            color: #1e88e5;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .tip-card {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #ff9800;
+        }
+        .tip-card h3 {
+            color: #333;
+            margin-top: 0;
+        }
         .footer {
-            margin-top: 30px;
-            font-size: 0.8em;
-            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+            background-color: #e0e0e0;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="brand-name">ATHLETES AHAAR</h1>
-        <p class="tagline">Fueling Your Performance.</p>
+    <header class="hero">
+        <h1>ATHLETES AHAAR</h1>
+        <p>FUELING THE NEXT GENERATION OF CHAMPIONS.</p>
+        
+        <a href="#tips-content" class="hero-cta">Explore Quick Tips Below</a>
+    </header>
 
-        <div class="message">
-            <p>Our website is currently under construction!</p>
-            <p>We're preparing to launch the ultimate resource for high-performance nutrition and athletic diets.</p>
-            <p>Follow us to be the first to know when we go live.</p>
+    <main id="tips-content" class="content-section">
+        <h2>Expert Nutrition Tips for Peak Performance</h2>
+
+        <div class="tip-card">
+            <h3>Tip 1: The Golden 30-Minute Window</h3>
+            <p>Always consume a quick-acting carb and protein source (like a banana and a scoop of whey) within 30 minutes post-workout. This is when your muscles are most receptive to recovery, maximizing gains and minimizing soreness.</p>
         </div>
 
-        <a href="#" class="cta">Get Notified</a>
+        <div class="tip-card">
+            <h3>Tip 2: Hydration is NOT Just Water</h3>
+            <p>For sessions lasting over 60 minutes, plain water isn't enough. You need electrolytes (sodium, potassium). Mix a pinch of sea salt into your water bottle or use a natural sports drink to maintain nerve and muscle function.</p>
+        </div>
 
-        <p class="footer">
-            &copy; 2025 Athletes Ahaar. All Rights Reserved.
-        </p>
-    </div>
+        <div class="tip-card">
+            <h3>Tip 3: The Power of Sleep Fuel</h3>
+            <p>A slow-digesting protein (like cottage cheese or casein powder) before bed prevents muscle breakdown overnight. Think of it as a low-level fuel drip for your muscles while you rest and repair.</p>
+        </div>
+        
+        <p style="text-align: center; margin-top: 40px;">*More in-depth articles coming soon when the full site launches!*</p>
+    </main>
+    
+    <footer class="footer">
+        &copy; 2025 Athletes Ahaar. All Rights Reserved. | Hosted for Free by GitHub Pages.
+    </footer>
 
 </body>
 </html>
